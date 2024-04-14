@@ -1,0 +1,47 @@
+{
+    "description": "MRI for Whole Heart Segmentation",
+    "labels": {
+        "00": "background",
+        "01": "pulmonary artery",
+        "02": "ascending aorta",
+        "03": "right ventricle",
+        "04": "right atrium",
+        "05": "left ventricle",
+        "06": "left atrium",
+        "07": "left ventricular myocardium"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "MR"
+    },
+    "name": "Multi-Modality Whole Heart Segmentation",
+    "numTest": 4,
+    "numTraining": 16,
+    "reference": "https://zmiclab.github.io/zxh/0/mmwhs/",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "val": [
+         {
+            "image": "./imagesVal/mr_train_1003_image.nii.gz",
+            "label": "./labelsVal/mr_train_1003_label.nii.gz"
+        },
+        {
+            "image": "./imagesVal/mr_train_1009_image.nii.gz",
+            "label": "./labelsVal/mr_train_1009_label.nii.gz"
+        },
+        {
+            "image": "./imagesVal/mr_train_1014_image.nii.gz",
+            "label": "./labelsVal/mr_train_1014_label.nii.gz"
+        },
+        {
+            "image": "./imagesVal/mr_train_1019_image.nii.gz",
+            "label": "./labelsVal/mr_train_1019_label.nii.gz"
+        }
+    ],
+    "training": [
+        {
+            "image": "C:\\Users\\admin\\Desktop\\NSCLC\\NSCLS_3DSeg\\ImagesTr\\s019\\s019_image.nii.gz",
+            "label": "C:\\Users\\admin\\Desktop\\NSCLC\\NSCLS_3DSeg\\LabelsTr\\s019\\s019_mask.nii.gz"
+        }
+    ]
+}
